@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><link href="bundle.f5340367e9914629603e.css" rel="stylesheet"></head><body><div class="wrapper"><div id="app"><main-app></main-app></div><div class="preloader" data-type="preloader"><img src="img/logo.png" alt="logo" width="68px"><div class="load-container"><div class="load-line" data-type="loader"></div></div></div></div><script>const loadLine = document.querySelector('[data-type="loader"]')
+  let loadVal = 0
+  const loadStep = setInterval(() => {
+   if (loadVal < 75) {
+    loadLine.style.width = loadVal + '%'
+    loadVal+=3
+   }
+  }, 100);
+  window.addEventListener('load', loader)
+
+  function loader(e) {
+   if (e) {
+    clearInterval(loadStep)
+    loadLine.style.width = '100%'
+    const delPreloader = document.querySelector('[data-type="preloader"]')
+    document.body.classList.add('rdy')
+    delPreloader.parentNode.removeChild(delPreloader)
+    setTimeout(() => {
+     document.querySelector('[data-page="1"]').style.animation = 'none'
+     window.removeEventListener('load', loader)
+    }, 1000);
+   }
+  }</script><script src="1.bundle.f5340367e9914629603e.js"></script><script src="bundle.f5340367e9914629603e.js"></script></body></html>

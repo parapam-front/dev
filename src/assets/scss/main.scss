@@ -1,0 +1,66 @@
+@import "utils/fonts.scss";
+@import "utils/vars.scss";
+
+body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100vh;
+ overflow: hidden;
+ // font-weight: $mainFontWeight;
+}
+
+button{
+ outline: none;
+ border: none;
+ padding: 0;
+ margin: 0;
+}
+// button:active{
+//  outline: none;
+//  border: none;
+// }
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+ -webkit-tap-highlight-color: transparent;
+}
+*{
+ cursor: default;
+ outline: none;
+}
+* a,button,button *,input,input *,.pointer *, .pointer{
+ cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul,
+li {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+}
+
+@import 'modules/wrapper';
+@import 'modules/preloader';
+@import 'modules/header';
+@import 'modules/first';
+@import 'modules/footer';
+@import 'modules/second'
+// важные моменты при адаптации
+// мудрённый прелодер, подвигать чтобы совпали пиксели
+// цвет прелодера подобрать

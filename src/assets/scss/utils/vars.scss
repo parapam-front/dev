@@ -1,0 +1,92 @@
+$bodoniB : 'BodoniB',
+Arial,
+sans-serif;
+$bodoniW : 'BodoniW',
+Arial,
+sans-serif;
+$hl : 'helveticaLight',
+Arial,
+sans-serif;
+$hr : 'helveticaReg',
+Arial,
+sans-serif;
+$tnr : 'timesNewRoman',
+Arial,
+sans-serif;
+$athelas : 'Athelas',
+Arial,
+sans-serif;
+
+//color
+$borderInquiry: rgb(242, 245, 250, 0.3);
+
+$firstFontBorder: #F2F5FA;
+
+$navFont: #94979E;
+
+$secondFontSvg: #2E363F;
+
+$analogBg: #394551;
+
+$lightGrayDescr: #818992;
+
+$burgerColor: #2F3741;
+
+$tabButtonBg: #E7EBF1;
+
+// $tabButtonBg: rgba(231, 235, 241, 0.7);
+
+$pageTwoNumb: #2A323B;
+
+$inquiry: #D1D7DB;
+
+$mobileSvg: #F3F3F3;
+
+$tabTextlight: #A9ADB6;
+
+$tabTextDark: #525761;
+
+$tabSlideNotChecked: #B5BAC1;
+
+$buttonGreen: #34A62F;
+
+$titlePageTwo: #232930;
+
+$titlePageOne: #616972;
+
+$application: #2D353F;
+
+$tabSlider: #C4C4C4;
+//
+
+$paddingWrapperDesktop: 0 46px;
+$paddingWrapperTablet: 0 32px;
+$paddingWrapperMobile: 0 24px;
+
+
+// для значений абсолютно спозиционированных величих
+
+$containerWidthDesktop: calc(100% - 92px);
+$containerWidthTablet: calc(100% - 64px);
+$containerWidthMobile: calc(100% - 48px);
+
+$leftDesktop: 46px;
+$rightDesktop: 46px;
+
+$leftTablet: 32px;
+$rightTablet: 32px;
+
+
+$leftMobile: 24px;
+$rightMobile: 24px;
+
+//высота для адаптации в vh
+
+$headerDesktopHeight: 13vh;
+$headerTabletHeight: 8vh;
+
+$mainDesktopHeight: 75vh;
+$mainTabletHeight: 84vh;
+
+$footerDesktopHeight: 12vh;
+$footerTabletHeight: 8vh;

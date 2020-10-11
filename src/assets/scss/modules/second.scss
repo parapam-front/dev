@@ -1,0 +1,135 @@
+.second__container{
+ width: 100vw;
+ position: relative;
+ top: $headerDesktopHeight;
+ left: -$leftDesktop;
+ height: $mainDesktopHeight;
+ // z-index: 1;
+ background: $firstFontBorder;
+}
+.second__title-container{
+ height: 33%;
+ display: flex;
+ padding: $paddingWrapperDesktop;
+ padding-right: 0;
+ padding-top: 64px;
+ justify-content: flex-start;
+ // margin: 0 0 62px 0 ;
+}
+.second__title{
+ font-size: 76px;
+ line-height: 78px;
+ font-family: $tnr;
+ letter-spacing: -0.298571px;
+ color: $titlePageTwo;
+ width: 554px;
+ margin: 0 38px 0 0;
+}
+.second__tab-container{
+ display: flex;
+ height: 40px;
+ position: relative;
+ top: 10px;
+ // из-за высоты линий нужно сместить блок не забыть адаптировать
+ input{
+  display: none;
+ }
+ label{
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+  z-index: 1;
+  opacity: 1000;
+  font-size: 16px;
+  line-height: 18px;
+  color: $lightGrayDescr;
+  padding: 10px 45px 12px 50px;
+  background: none;
+  cursor: pointer;
+ }
+ input:checked+label {
+  border-radius: 24px;
+ }
+ input:checked+label::before{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: $buttonGreen;
+  border-radius: 100%;
+ }
+ input:checked+label::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: $tabButtonBg;
+  border-radius: 24px;
+ }
+}
+
+@keyframes rightAft {
+ from {
+  left: 145px;
+  opacity: 0;
+ }
+ to {
+  left: 0px;
+  opacity: 1;
+ }
+}
+@keyframes rightBef {
+ from {
+  left: 145px;
+  opacity: 0;
+ }
+ to {
+  left: 14px;
+  opacity: 1;
+ }
+}
+@keyframes leftAft {
+ from {
+  left: -145px;
+  opacity: 0;
+ }
+ to {
+  left: 0px;
+  opacity: 1;
+ }
+}
+@keyframes leftBef {
+ from {
+  left: -145px;
+  opacity: 0;
+ }
+ to {
+  left: 14px;
+  opacity: 1;
+ }
+}
+.tab-first:checked + label::before {
+ animation: .3s rightBef;
+}
+.tab-first:checked + label::after
+ {
+ animation: .3s rightAft;
+}
+.tab-second:checked + label::before {
+ animation: .3s leftBef;
+}
+.tab-second:checked + label::after
+ {
+ animation: .3s leftAft;
+}
+
+@import './secondComp/slider';
+@import './secondComp/descr';
+@import './adaptive/adaptiveSecond'

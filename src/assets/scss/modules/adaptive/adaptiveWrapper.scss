@@ -1,0 +1,15 @@
+@media (max-width:540px) {
+ .wrapper{
+  padding: $paddingWrapperMobile;
+ }
+}
+@media (max-width:1170px) {
+ .wrapper{
+  padding: $paddingWrapperTablet;
+ }
+}
+@media (max-width:540px) {
+ .wrapper{
+  padding: $paddingWrapperMobile;
+ }
+}

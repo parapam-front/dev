@@ -1,0 +1,44 @@
+.first__video-button-container{
+ display: flex;
+ flex-direction: column;
+ width: 264px;
+}
+.first__video-company-descr{
+ font-size: 16px;
+ line-height: 26px;
+ color: $lightGrayDescr;
+ font-family: $hl;
+ margin: 0 0 82px 0;
+}
+.first__video-button{
+ width: 40px;
+ min-height: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ background: transparent;
+ border-radius: 100%;
+ border: 1px solid $borderInquiry;
+ transition: .3s;
+ svg{
+  margin: 0 0 0 2px;
+ }
+ &:hover{
+  background: $borderInquiry;
+ }
+ &:hover .first__video-button-span{
+  padding: 0 0 0 32px;
+ }
+}
+.first__video-button-span{
+ position: absolute;
+ left: 100%;
+ padding: 0 0 0 22px;
+ white-space: nowrap;
+ color: $firstFontBorder;
+ font-size: 16px;
+ line-height: 26px;
+ transition: .3s;
+ font-family: $athelas;
+}

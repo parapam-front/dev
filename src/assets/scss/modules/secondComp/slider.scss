@@ -1,0 +1,139 @@
+.second__slide-container{
+ // width: 400%;
+ height: 67%;
+ left: 0;
+ // max-height: 560px;
+ display: flex;
+ position: relative;
+ background: $tabButtonBg;
+ flex-direction: row;
+ transition: 1s ease-out;
+}
+.second__slide{
+ // width: 25%;
+ padding: 58px 278px 58px 46px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.second__slide-upper-container{
+ display: flex;
+ height: 140px;
+ justify-content: space-between;
+}
+.second__slide-title{
+ font-size: 26px;
+ line-height: 36px;
+ font-family: $hr;
+ color: $secondFontSvg;
+ width: 300px;
+ margin: 0 172px 0 0;
+
+}
+.second__slide-descr{
+ font-size: 16px;
+ line-height: 26px;
+ font-family: $hl;
+ color: $lightGrayDescr;
+ width: 300px;
+ // margin: 0 124px 0 0;
+}
+.second-slide__img{
+ position: relative;
+ height: 390px;
+ top: -58px;
+}
+.second__slide-arrows-container{
+ font-size: 0;
+ display: flex;
+ button{
+  width: 46px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: $tabSlider;
+  border-radius: 100px 0 0 100px;
+ }
+ .second__slide-arrow-right{
+  border-radius: 0 100px 100px 0;
+  svg{
+   transform: rotate(180deg);
+  }
+ }
+}
+.second__slide-lower-container{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 1;
+ padding: 0 260px 0 0 ;
+ // position: absolute;
+ // bottom: 58px;
+ // width: 25%;
+ // left: 0;
+ // padding: $paddingWrapperDesktop;
+}
+.second__slide-detail-button{
+ font-size: 14px;
+ line-height: 16px;
+ font-family: $athelas;
+ color: $firstFontBorder;
+ background: $pageTwoNumb;
+ padding: 11px 44px 13px 38px;
+ border-radius: 100px;
+}
+.second__slide-lower-info{
+ color: $tabTextDark;
+ font-size: 16px;
+line-height: 16px;
+font-family: $hl;
+}
+.second__slide-lower-info-span{
+ margin: 0 10px 0 0;
+ color: $tabTextlight;
+}
+.second__slide-radio-container{
+ width: 190px;
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ input{
+  display: none;
+ }
+ label{
+  width: 40px;
+  height: 6px;
+  padding: 4px 0 0;
+  border-bottom: 1px solid $tabSlideNotChecked;
+  cursor: pointer;
+ }
+ input:checked + label{
+  padding: 0;
+  background: $pageTwoNumb;
+ }
+}
+.second__change-slide-container{
+ position: sticky;
+ right: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ justify-content: space-between;
+ height: 100%;
+ top: 0;
+ width: 0;
+ z-index: 1;
+}
+.second__slide-arrows-container{
+ position: relative;
+ top: 58px;
+}
+
+.second__slide-radio-container{
+ position: relative;
+ bottom: 72px;
+}
+.second__slide-arrows-container,.second__slide-radio-container{
+ right: 46px;
+}

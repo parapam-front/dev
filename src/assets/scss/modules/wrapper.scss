@@ -1,0 +1,24 @@
+.wrapper{
+ width: 100%;
+ height: 100vh;
+ padding: $paddingWrapperDesktop;
+ background: $analogBg;
+ background: url('../img/mainbg.png') $analogBg;
+ background-blend-mode: soft-light, normal;
+
+ position: relative;
+ 
+}
+.main-container{
+ display: none;
+}
+
+.rdy .main-container {
+ display: block;
+ width: 100%;
+ height: 100vh;
+}
+
+
+
+@import './adaptive/adaptiveWrapper'

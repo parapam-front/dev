@@ -1,0 +1,24 @@
+.header-phone__container{
+ display: flex;
+ flex-direction: flex-start;
+ align-items: center;
+ &:hover .header-phone__svg-cont{
+  background: $borderInquiry;
+  margin: 0 42px 0 0;
+ }
+}
+.header-phone__svg-cont {
+ transition: .3s;
+ width: 40px;
+ height: 40px;
+ border-radius: 100%;
+ border: 1px solid $firstFontBorder;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0 32px 0 0;
+ svg {
+  fill: $mobileSvg
+ }
+}
+ 

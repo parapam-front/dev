@@ -1,0 +1,21 @@
+@media (max-width:540px) {
+ .footer__button-span{
+  left: $leftMobile;
+ }
+ .footer__social-container{
+  right: $rightMobile
+ }
+}
+@media (min-width:540px) and (max-width: 1170px) {
+ .footer__container{
+  height: $footerTabletHeight;
+ }
+}
+@media (max-width:1170px) {
+ .footer__button-span{
+  left: $leftTablet;
+ }
+ .footer__social-container{
+  right: $rightTablet
+ }
+}

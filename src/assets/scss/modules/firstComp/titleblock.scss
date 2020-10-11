@@ -1,0 +1,40 @@
+.first__main-title-box{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: flex-start;
+ width: 482px;
+ margin: 0 140px 0 0;
+}
+.first__maint-title-cont{
+ display: flex;
+ flex-direction: column;
+}
+.first__main-title{
+ font-size: 80px;
+ line-height: 70px;
+ letter-spacing: -0.314286px;
+ font-family: $tnr;
+ color: $firstFontBorder;
+ font-weight: normal;
+ .first__main-title-span{
+  color: $titlePageOne;
+ }
+}
+.first__main-subtitle{
+ margin: 92px 0 0 0;
+ width: 204px;
+ font-family: $hl;
+ font-size: 24px;
+ line-height: 36px;
+ color: $lightGrayDescr;
+}
+.first__main-application{
+ padding: 12px 32px;
+ background: $application;
+ background: $firstFontBorder;
+ border-radius: 100px;
+ font-family: $athelas;
+ font-size: 14px;
+ line-height: 16px;
+}

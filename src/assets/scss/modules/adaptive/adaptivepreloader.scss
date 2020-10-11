@@ -1,0 +1,7 @@
+@media (min-width:540px) and (max-width: 1170px) {
+ .preloader {
+  width: $containerWidthTablet;
+  height: $headerTabletHeight;
+  left: $leftTablet;
+ }
+}

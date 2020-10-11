@@ -1,0 +1,30 @@
+.second__descr-container{
+ padding: $paddingWrapperDesktop;
+ padding-top: 64px;
+ justify-content: space-between;
+ overflow-y: auto;
+ flex-wrap: wrap;
+ opacity: 1;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ z-index: 1000;
+}
+.second__descr-box{
+ width: 228px;
+ margin-bottom: 42px;
+}
+.second__descr-title{
+ // max-height: 90px;
+ font-size: 20px;
+ line-height: 30px;
+ font-family: $hr;
+ color: $secondFontSvg;
+ height: 144px;
+}
+.second__descr{
+ font-size: 16px;
+line-height: 26px;
+font-family: $hl;
+color: $lightGrayDescr;
+}

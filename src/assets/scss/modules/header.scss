@@ -1,0 +1,57 @@
+.header__container{
+ width: calc(100% - 92px);
+ z-index: 1;
+ // width: 100%;
+ height: $headerDesktopHeight;
+ // position: relative;
+ position: fixed;
+ display: flex;
+ justify-content: space-between;
+ color: $navFont;
+ font-family: $tnr;
+ line-height: 26px;
+ font-size: 16px;
+ align-items: center;
+ // border-bottom: 1px solid $firstFontBorder;
+ .logo{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+ }
+}
+.header-line{
+ position: absolute;
+ bottom: -1px;
+ height: 1px;
+ width: 100%;
+ background: $firstFontBorder;
+ z-index: 10000;
+}
+.header-close{
+ width: 40px;
+ height: 40px;
+ position: absolute;
+ background: transparent;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: none;
+ right: 0;
+ .header-close-span{
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: $firstFontBorder;
+  transform: rotate(45deg);
+ }
+ .header-close-span-rotate{
+  transform: rotate(135deg);
+ }
+}
+
+
+
+
+@import './headerComp/phone';
+@import './headerComp/nav';
+@import './adaptive/adaptiveHeader'

@@ -1,0 +1,35 @@
+.first__number-page-container{
+ display: flex;
+ position: absolute;
+ z-index: 1000;
+ top: 48px;
+ right: $rightDesktop;
+ font-size: 46px;
+ transform: translateX(0);
+ transition: 1s cubic-bezier(0.73,0.16,0.32,0.91);
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-start;
+}
+.first__this-number{
+ transition: 1s cubic-bezier(0.73,0.16,0.32,0.91);
+ margin: 0 184px 0 0;
+ font-size: 188px;
+ line-height: 160px;
+// line-height: 82px;
+letter-spacing: -20.9364px;
+font-family: $bodoniB;
+color: $firstFontBorder;
+}
+.first__total-number-block{
+ display: flex;
+ // flex-direction: column;
+ justify-content: flex-end;
+ align-items: flex-end;
+ font-family: $bodoniB;
+ line-height: 82px;
+ letter-spacing: -1.57px;
+ color: $borderInquiry;
+ font-size: 68px;
+ transition: 1s cubic-bezier(0.73,0.16,0.32,0.91);
+}

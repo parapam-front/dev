@@ -1,0 +1,44 @@
+@media (max-width:1600px) {
+ .navigation-list{
+  display: none;
+ }
+ .burger__container{
+  margin: 0;
+ }
+}
+@media (min-width:540px) and (max-width: 1170px) {
+  .header__container{
+    height: $headerTabletHeight ;
+    width: $containerWidthTablet;
+  }
+}
+@media (max-width:540px){
+ @keyframes logo {
+  from {
+   left: 50%;
+   transform: translateX(-50%);
+  }
+  to {
+   left: 0;
+   transform: translateX(0);
+  }
+ }
+ // .preloader{
+ //  // align-items: flex-start;
+ // }
+ .header-phone__container{
+  display: none;
+ }
+ .header__container {
+   justify-content: flex-end;
+   width: $containerWidthMobile;
+  .logo{
+   transform: translateX(0);
+   left: 0;
+   animation: 1s logo;
+  }
+ }
+ .nav__inquiry{
+  display: none;
+ }
+}
