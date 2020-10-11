@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.12",
     "vuex": "^3.5.1"
   }

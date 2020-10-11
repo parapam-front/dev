@@ -5,3 +5,9 @@
   left: $leftTablet;
  }
 }
+@media (max-width: 540px) {
+ .preloader {
+  width: $containerWidthMobile;
+  left: $leftMobile;
+ }
+}

@@ -1,9 +1,13 @@
 <template>
- <div class="main-container">
+ <div class="main-container" data-type="safariMobileHeight" >
   <div class="video-wrapper" :style="{zIndex: videoOpen == true ? '1': '0'}">
-   <video loop muted class="video-bg" data-type="video" src="img/video/bg.mp4" :style="{opacity: videoOpen == true ? '1' : '0'}"></video>
+   <video loop muted class="video-bg" data-type="video" src="img/video/bg.mp4" :style="{opacity: videoOpen == true ? '1' : '0'}">
+     <source src="img/video/bg.mp4" type="video/mp4">
+     <source src="img/video/bg.webm" type="video/webm">
+     video не поддерживается вашим браузером
+   </video>
   </div>
-  <app-header></app-header>
+  <app-header></app-header >
   <transition name="fade">
    <app-first v-show="!videoOpen"></app-first>
   </transition>
@@ -25,13 +29,24 @@ export default {
   appSecond
  },
  mounted() {
-  // this.$nextTick(()=>document.body.classList.add('rdy'));
+ },
+ methods: {
  },
  computed: {
   videoOpen() {
    return this.$store.getters.VIDEOPLAY
   }
  },
+ mounted() {
+   // Для того чтобы избавиться от бага с высотой в safari mobile
+   const main = document.querySelector('[data-type="safariMobileHeight"]')
+   main.style.height = window.innerHeight+'px'
+   // чтобы не было бага в хром мобайл при скрытии строчки ввода из-за предыдущего действия
+   window.addEventListener('resize', e => {
+     main.style.height = window.innerHeight+'px'
+     console.log(main.style.height);
+   })
+ }
 }
 </script>
 

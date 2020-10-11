@@ -82,11 +82,19 @@ $rightMobile: 24px;
 
 //высота для адаптации в vh
 
-$headerDesktopHeight: 13vh;
-$headerTabletHeight: 8vh;
+// $headerDesktopHeight: 13vh;
+// $headerTabletHeight: 8vh;
 
-$mainDesktopHeight: 75vh;
-$mainTabletHeight: 84vh;
+// $mainDesktopHeight: 75vh;
+// $mainTabletHeight: 84vh;
 
-$footerDesktopHeight: 12vh;
-$footerTabletHeight: 8vh;
+// $footerDesktopHeight: 12vh;
+// $footerTabletHeight: 8vh;
+$headerDesktopHeight: 13%;
+$headerTabletHeight: 8%;
+
+$mainDesktopHeight: 75%;
+$mainTabletHeight: 84%;
+
+$footerDesktopHeight: 12.2%;
+$footerTabletHeight: 8.2%;
